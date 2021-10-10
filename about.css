@@ -1,0 +1,40 @@
+
+
+
+
+
+.background
+{
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    padding: 75px;  
+}
+
+
+
+h1 span
+{
+    color: rgb(248, 173, 12);
+    
+}
+h3
+{
+    color: rgb(117, 81, 4);
+}
+
+
+.col-sm-4:hover .profile-img
+ {
+    filter: grayscale(2%);
+    margin-top: 60px;
+ }
+
+
+.col-sm-4 .profile-img {
+    height: 270px;
+    width: 230px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    
+  }
+  

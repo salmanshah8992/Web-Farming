@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <link rel="stylesheet" href="signin.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="navbar.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title> SignIn</title>
+</head>
+<body>
+  
+<!-- Header --> 
+<div class="web"> <h1>ওয়েব ফার্মিং</h1></div>
+<div class="container">
+
+<div class="navlist">
+
+  <ul>
+    <li><a href="index.html">হোম</a></li>
+    <li><a href="cart.html" >ক্রয় করুন </a></li>
+    <li><a href="">চাষাবাদ</a> <ul>
+      <li><a href="rice.html" >ধান চাষ </a></li>
+      <li><a href="jute.html" >পাট চাষ </a> </li>
+      <li><a href="saksobji.html" > শাকসবজি</a> </li>
+    </ul>
+        </li>
+    <li><a href="gallery.html">গ্যালারি </a></li>
+    <li><a href="about.html">সম্পর্কে</a></li>
+    <li><a href="contact.html" >যোগাযোগ</a></li>
+    <li><a href="signin.html" >সাইন ইন</a></li>
+
+  </ul>
+</div>
+
+
+</div>
+
+<br><br><br>
+
+<form action="signin.php" method="POST">	
+
+            <h2>এখানে সাইন ইন করুন</h2>
+            <hr>
+    <label for="phone"><b>ফোন নম্বর:</b></label>
+    <input type="phone" id="phone" placeholder="01914716755" name="phone" required><br>
+	<label for="pow"><b>পাসওয়ার্ড:</b></label> 
+	<input type="password" id="pow"placeholder=" S@lman2342" name="psw" required><br>
+    <div class="clearfix">
+        <button class="backbtn"><a href="index.html">পিছনে যান</a></button>
+        <button type="submit" name="submit" class="signinbtn">সাইন ইন করুন</button>
+       <br><br>
+        <h6><a href="#">পাসওয়ার্ড ভুলে গেছেন?</a></h6>
+    </div>
+    <div>
+        <h5 >কোন অ্যাকাউন্ট নেই?<a href="signup.html" >এখানে সাইন আপ করুন</a></h5>
+    </div>
+    
+</form>
+</div>
+
+
+<div>
+    <footer>
+      <p>ওয়েব ফার্মিং<br>
+      <a href="webfarming.com">info@webfarming.com</a></p>
+    </footer>
+  
+  </div>
+
+</body>
+</html>

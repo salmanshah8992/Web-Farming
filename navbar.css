@@ -1,0 +1,119 @@
+@font-face {
+	font-family: 'AdorshoLipi';
+	src: url('AdorshoLipi.eot');
+	src: url('AdorshoLipi.woff') format('woff'),
+		 url('AdorshoLipi.ttf') format('truetype'),
+		 url('AdorshoLipi.svg#AdorshoLipi') format('svg'),
+		 url('AdorshoLipi.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+*{ background-color:white; 
+padding: 10px;
+}
+
+
+body{
+
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.web h1{
+	color:rgb(214, 26, 19);
+	padding-top:5px;
+	padding-left:20px;
+	position:fixed;
+
+}
+
+.navlist ul
+{
+	margin-top:30px;
+	position:fixed;
+	width:100%;
+	color: rgb(16, 17, 17);
+  list-style: none;
+  padding-left:0px;
+  padding-right: 100px;
+
+
+} 
+.navlist ul li
+{
+
+	background-color: rgb(160, 197, 197);
+	float: left;
+	height: 50px;
+	width: 13%;
+	text-align: center;
+	
+	opacity: 0.9;
+  cursor:pointer;
+}
+ 
+.navlist ul li:hover
+{
+	color: black;
+	background-color: rgb(152, 214, 171);
+	border-style: solid;
+	text-decoration:none;
+  border-radius: 20px 0px;
+  display: block;
+  float:left;
+}
+
+.navlist ul li ul li
+{
+	color: black;
+	background-color: rgb(148, 179, 199);
+	text-align: center;
+	opacity: 0.9;
+}
+.navlist ul li ul li:hover
+{
+  padding:1px;
+	color: black;
+	text-align: center;
+	opacity: 0.9;
+}
+.navlist ul ul
+{
+	display: none;
+}
+.navlist ul li:hover ul
+{
+	margin-top:17px;
+	display: block;
+}
+.p1{
+	width:Auto;
+	padding-left:100px;
+	padding-right:100px;
+}
+.carousel-inner img {
+    width: 500px;
+    height: 300px;
+	padding-left: 300px;
+	
+  }
+  footer {
+	text-align: center;
+	padding: 50px;
+	background-color: DarkSalmon;
+	color: rgb(129, 22, 129);
+  }
+
+  .to-top a{
+    background:rgba(61, 9, 247, 0.897);
+    padding:10px;
+    font-size:30px;
+    color:rgb(12, 11, 11);
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    border-radius:11px 11px 0 0;
+  
+}

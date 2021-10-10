@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>ক্রয় করুন</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" ></script> 
+
+	<script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="cart.css">
+	<link rel="stylesheet" href="navbar.css">
+ 
+</head>
+
+<body>
+
+	
+	<div class="web"> <h1>ওয়েব ফার্মিং</h1></div>
+	<div class='to-top'><a href='#'> <i class=" fa fa-arrow-up "></i> </a></div>
+
+	<div class="container">
+
+		
+ <div class="navlist">
+ 
+	<ul>
+	  <li><a href="index.html">হোম</a></li>
+	  <li><a href="cart.html" >ক্রয় করুন </a></li>
+	  <li><a href="">চাষাবাদ</a> <ul>
+		<li><a href="rice.html" >ধান চাষ </a></li>
+		<li><a href="jute.html" >পাট চাষ </a> </li>
+		<li><a href="saksobji.html" > শাকসবজি</a> </li>
+	</ul>
+		  </li>
+	  <li><a href="gallery.html">গ্যালারি </a></li>
+	  <li><a href="about.html"> সম্পর্কে</a></li>
+	  <li><a href="contact.html" >যোগাযোগ</a></li>
+	  <li><a href="signin.html" >সাইন ইন</a></li>
+ 
+ 
+	</ul>
+
+  </div>
+
+	<div class="sidenav">
+		<div class="card-header">
+			<h6>ক্রয়কৃত পণ্য তালিকা</h6>
+		</div>
+		<div class="card-body">
+			<table>
+				<tbody class="cart">
+				</tbody>
+				<tfoot>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="text-right">সর্বমোট: <br><br> <strong class="total"></strong></td>
+				
+				</tfoot>
+			</table>
+		</div>
+	</div>
+
+
+
+  <div class="buy"><a href="payment.html" ><h3>টাকা প্রদান করুন</h3></a></div>
+<br>
+<p>
+		<div class="card">
+
+			<h4>পণ্য তালিকা</h4>
+
+			<img src="img/carrot.jpg" alt="Denim Jeans" style="width:100%">
+			<h3>গাজর</h3>
+			<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+			<p>এর ফলন বেশ ভালো হয়</p>
+			<p><button type="button" class="btn btn-block btn-outline-primary"
+				onClick="cartLS.add({id: 1, name: 'গাজর', price: 50})">Add to
+				Cart</button></p>
+		  </div>
+
+
+		  <div class="card">
+			<img src="img/dragon.webp" alt="Denim Jeans" style="width:100%">
+			<h3>ড্রাগন ফল</h3>
+			<p class="price">মূল্য: ৩০৳ প্যাকেট</p>
+			<p>এর ফলন বেশ ভালো হয়</p>
+			<p><button type="button" 
+				onClick="cartLS.add({id: 2, name: 'ড্রাগন ফল', price: 30})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/tomatto.jpg" alt="Denim Jeans" style="width:100%">
+			<h3>টমেটো</h3>
+			<p class="price">মূল্য: ৩০৳ প্যাকেট</p>
+			<p>এর ফলন বেশ ভালো হয়</p>
+			<p><button type="button" 
+				onClick="cartLS.add({id: 3, name: 'টমেটো', price: 30})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/gourd.jpeg" alt="Denim Jeans" style="width:100%">
+                     <h3>লাউ</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 4, name: 'লাউ', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+
+		  <div class="card">
+			<img src="img/cucumber.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>শসা</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 5, name: 'শসা', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/onion.png" alt="Denim Jeans" style="width:100%">
+                     <h3>পিয়াজ</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 6, name: 'পিয়াজ', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/kohlrabi.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>শালগম</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 7, name: 'শালগম', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/red.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>মরিচ</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 8, name: 'মরিচ', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/pumpkin.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>কুমড়া</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 9, name: 'কুমড়া', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/Potatoes.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>আলু</h3>	
+					 		<p class="price">মূল্য: ৫০৳ কেজি</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 10, name: 'আলু', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+
+
+
+		  <div class="card">
+			<img src="img/flat beans.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>সিম</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 11, name: 'সিম', price: 20})">Add to
+				Cart</button></p>
+		  </div><div class="card">
+			<img src="img/Cauliflower.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>ফুলকপি</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 12, name: 'ফুলকপি', price: 20})">Add to
+				Cart</button></p>
+		  </div><div class="card">
+			<img src="img/palong-shak.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>পালং শাক</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 13, name: 'পালং শাক', price: 20})">Add to
+				Cart</button></p>
+		  </div><div class="card">
+			<img src="img/red spinach.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>লাল শাক</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 14, name: 'লাল শাক', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/bashmoti.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>বাসমতি ধান</h3>	
+					 		<p class="price">মূল্য: ২২৳ কেজি</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 15, name: 'বাসমতি ধান', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+
+
+		  <div class="card">
+			<img src="img/aman.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>আমন ধান</h3>	
+					 		<p class="price">মূল্য: ২০৳ কেজি</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 16, name: 'আমন ধান', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/hori.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>হরি ধান</h3>	
+					 		<p class="price">মূল্য: ২০৳ কেজি</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 17, name: 'হরি ধান', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+
+		  <div class="card">
+			<img src="img/water melon.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>তরমুজ</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 18, name: 'তরমুজ', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+		  <div class="card">
+			<img src="img/bangi.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>বাঙ্গি</h3>	
+					 		<p class="price">মূল্য: ২০৳ প্যাকেট</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 19, name: 'বাঙ্গি', price: 20})">Add to
+				Cart</button></p>
+		  </div>
+
+		  <div class="card">
+			<img src="img/banana.jpg" alt="Denim Jeans" style="width:100%">
+                     <h3>কলাগাছ</h3>	
+					 		<p class="price">মূল্য: 1২০৳ পিস</p>
+							 <p>এর ফলন বেশ ভালো হয়</p>
+							 <p><button type="button" 
+				onClick="cartLS.add({id: 20, name: 'কলাগাছ', price: 120})">Add to
+				Cart</button></p>
+		  </div>
+		</p>
+
+		<div class="footer">
+			<footer>
+			  <p>ওয়েব ফার্মিং<br>
+			  <a href="webfarming.com">info@webfarming.com</a></p>
+			</footer>
+		  
+		  </div>
+		</div>
+
+		  
+	<script>
+		function renderCart(items) {
+			const $cart = document.querySelector(".cart")
+			const $total = document.querySelector(".total")
+
+			$cart.innerHTML = items.map((item) =>`
+					<tr>
+						<td>${item.id}</td>
+						<td>${item.name}</td>
+						<td>${item.quantity}</td>
+						<td >	
+							<button type="button"
+								onClick="cartLS.quantity(${item.id},1)">+</button>
+						</td>
+						<td >	
+							<button type="button" 
+								onClick="cartLS.quantity(${item.id},-1)">-</button>
+						</td>
+						<td class="text-right">${item.price}৳</td>
+						<td class="text-right"><Button  onClick="cartLS.remove(${item.id})">বাদ দিন</Button></td>
+					</tr>`).join("")
+
+			$total.innerHTML =  cartLS.total() +"৳" 
+		}
+		renderCart(cartLS.list())
+		cartLS.onChange(renderCart)
+	</script>
+
+	
+<script>
+	(function($)
+	{
+	$(document).ready(function(){
+	
+	$('.to-top a').click(function(){
+	$('html, body').animate({'scrollTop':0},'speed');
+	
+	});
+	
+	$(window).scroll(function()
+	{
+		if($(window).scrollTop()>200){
+			$('.to-top a').fadeIn();
+		}
+		else{  $('.to-top a').fadeOut();}
+	
+	});
+	
+	});
+	
+	
+	})(jQuery)
+	</script>
+</body>
+
+</html>

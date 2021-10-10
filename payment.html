@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="payment.css">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+
+  <div class="web"> <h1>ওয়েব ফার্মিং</h1></div>
+  <div class="container">
+ 
+  <div class="navlist">
+  
+    <ul>
+      <li><a href="index.html">হোম</a></li>
+      <li><a href="cart.html" >ক্রয় করুন </a></li>
+      <li><a href="">চাষাবাদ</a> <ul>
+        <li><a href="rice.html" >ধান চাষ </a></li>
+        <li><a href="jute.html" >পাট চাষ </a> </li>
+        <li><a href="saksobji.html" > শাকসবজি</a> </li>
+      </ul>
+          </li>
+      <li><a href="gallery.html">গ্যালারি </a></li>
+      <li><a href="about.html"> সম্পর্কে</a></li>
+      <li><a href="contact.html" >যোগাযোগ</a></li>
+      <li><a href="signin.html" >সাইন ইন</a></li>
+
+    </ul>
+  </div>
+
+
+</div>
+
+<br><br><br>
+
+
+
+<h2> চেকআউট</h2>
+
+
+  <div class="col-75">
+    <div class="container">
+      <form action="payment.php" method="POST">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>সরববরাহের ঠিকানা নির্বাচন করুন</h3>
+            <label for="fname"><i class="fa fa-user"></i> নাম</label>
+            <input type="text" id="fname" name="fullname" placeholder="Salman Shah">
+            <label for="phone"><i class="fa fa-envelope"></i> ফোন নম্বর</label>
+            <input type="text" id="phone" name="phonenm" placeholder="01914716755">
+            <label for="adr"><i class="fa fa-address-card-o"></i> ঠিকানা</label>
+            <input type="text" id="adr" name="addresses" placeholder="301/A Gulbag,Malibag">
+            <label for="city"><i class="fa fa-institution"></i> শহর</label>
+            <input type="text" id="city" name="city" placeholder="Malibag">
+
+          </div>
+
+          <div class="col-50">
+            <h3>পেমেন্ট</h3>
+            <label for="fname">স্বীকৃত কার্ড</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            
+            <label for="select_box">কার্ড /অ্যাকাউন্ট এর ধরন</label>
+            <select id="select_box" name="select_box_value">
+              <option value="visa" >Visa</option>
+              <option value="america">American Express</option>
+              <option value="master">Master Card</option>
+              <option value="discover">Discover</option>
+              <option value="bkash">Bkash</option>
+              <option value="dutch bangla">Dutch Bangla</option>
+              <option value="nagad">Nagad</option>
+
+            </select>
+            <label for="acname">  কার্ড /অ্যাকাউন্ট এর নম্বর</label>
+            <input type="text" id="acname" name="cardnam" placeholder="01796985655">
+           
+
+            
+            <div class="row">
+              <div class="col-50">
+                <label for="intotal">সর্বমোট</label>
+                <input type="text" id="intotal" name="total" placeholder="100৳">
+              </div>
+              <div class="col-50">
+                <label for="indate">তারিখ</label>
+                <input type="date" id="indate" name="dates" placeholder="03/04/2021">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        
+        <input type="submit" name="submit" value="নিশ্চিত করুন" class="btn">
+      </form>
+    </div>
+  </div>
+
+
+
+<div>
+  <footer>
+    <p>ওয়েব ফার্মিং<br>
+    <a href="webfarming.com">info@webfarming.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
